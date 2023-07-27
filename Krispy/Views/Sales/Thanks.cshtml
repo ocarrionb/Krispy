@@ -1,0 +1,26 @@
+﻿@model Krispy.Models.Sales
+
+@{
+    ViewData["Title"] = "Thanks";
+}
+
+<h2>
+    Thank you <strong>@ViewBag.Sale.UserName</strong> for your purchase.
+</h2>
+
+<br />
+<h4>About your order:</h4>
+
+<br />
+<br />
+<h5>Direction:</h5> @ViewBag.Sale.Direction
+<br />
+<br />
+<h5>Type of donut:</h5> @ViewBag.Name
+<br />
+<br />
+<h5>Amount:</h5> @ViewBag.Sale.Amount
+<br />
+
+<a asp-action="Index">Back Home</a>
+
